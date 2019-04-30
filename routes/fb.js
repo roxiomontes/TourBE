@@ -61,7 +61,7 @@ function pGETFacebookPlaceInformationAPI(pid) {
 	})
 }
 
-parseScript();
+//parseScript();
 
 function parseScript() {
 	fs.readFile('./locations.json','utf8', (err, data) => {
