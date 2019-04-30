@@ -10,42 +10,42 @@ const PlaceSchema = new Schema({
 	  required: false,
 	  unique: true
 	},
-   images: {
-	  type: [String],
-	  required: false,
-	  unique: false
-	},
-   description: {
+   checkins: {
 	  type: String,
 	  required: false,
 	  unique: false
 	},
-  reviewerNames: {
-	type: [String],
-	required: false,
-	unique: false
-	},
-  reviewerRatings: {
-	type: [String],
-	required: false,
-	unique: false
-	},
-  reviewerText: {
-	type: [String],
-	required: false,
-	unique: false
+   picture: {
+	  type: String,
+	  required: false,
+	  unique: false
 	},
   lat: {
 	type: String,
 	required: false,
+	unique: false
+	},
+  long: {
+	type: String,
+	required: false,
+	unique: false
+	},
+  website: {
+	type: String,
+	required: false,
+	unique: false
+	},
+  description: {
+	type: String,
+	required: false,
 	unique: false	
        },
-  log: {
+  name: {
 	type: String,
 	required: false,
 	unique: false
         },
-  name: {
+  link: {
 	type: String,
 	required: false,
 	unique: false	

@@ -1,14 +1,14 @@
 export default `
 	type Place {
 		id: String!
-	        images: [String]!
-		description: String!
-		reviewerNames: [String!]!
-		reviewerRatings: [String!]!
-		reviewerText: [String!]!
-		lat: String!,
-		log: String!,
+	        checkins: String!
+		picture: String!
+		lat: String!
+		long: String!
+		website: String!
+		description: String!,
 		name: String!,
+		link: String!,
 		state: String!,
 		region: String!	
 	}
@@ -17,8 +17,8 @@ export default `
 		places: [Place]
 	}
 	type Mutation {
-		addPlace(id: String!, images: [String]!, description: String!, reviewerNames: [String!]!, reviewerRatings: [String!]!, reviewerText: [String!]!, lat: String, log: String, name: String, state: String, region: String): Place
-		editPlace(id: String!, images: [String]!, description: String!, reviewerNames: [String!]!, reviewerRatings: [String!]!, reviewerText: [String!]!, lat: String, log: String, name: String, state: String, region: String): Place
-		deletePlace(id: String!, images: [String]!, description: String!, reviewerNames: [String!]!, reviewerRatings: [String!]!, reviewerText: [String!]!, lat: String, log: String, name: String, state: String, region: String): Place
+		addPlace(id: String!, checkins: String!, picture: String!, lat: String!, long: String!, website: String!, description: String, name: String, link: String, state: String, region: String): Place
+		editPlace(id: String!, checkins: String!, picture: String!, lat: String!, long: String!, website: String!, description: String, name: String, link: String, state: String, region: String): Place
+		deletePlace(id: String!, checkins: String!, picture: String!, lat: String!, long: String!, website: String!, description: String, name: String, link: String, state: String, region: String): Place
 	}
 `

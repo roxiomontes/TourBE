@@ -21,8 +21,8 @@ export default {
     }
   },
   Mutation: {
-    addPlace: (root, { id, images, description, reviewerNames, reviewerRatings, reviewerText, lat, log, name, state, region }) => {
-      const newUser = new User({ id, images, description, reviewerNames,reviewerRatings, reviewerText, lat, log, name, state, region });
+    addPlace: (root, { id, checkins, picture, lat, long, website, description, name, link, state, region}) => {
+      const newUser = new User({ id, checkins, picture, lat, long, website, description, name, link, state, region });
 
       return new Promise((resolve, reject) => {
         newUser.save((err, res) => {
@@ -30,9 +30,9 @@ export default {
         });
       });
     },
-    editPlace: (root, { id, images, description, reviewerNames, reviewerRatings, reviewerText, lat, log, name, state, region }) => {
+    editPlace: (root, {  id, checkins, picture, lat, long, website, description, name, link, state, region}) => {
       return new Promise((resolve, reject) => {
-        User.findOneAndUpdate({ id }, { $set: { id, images, description, reviewerNames, reviewerRatings, reviewerText, lat, log, name, state, region } }).exec(
+        User.findOneAndUpdate({ id }, { $set: { id, checkins, picture, lat, long, website, description, name, link, state, region } }).exec(
           (err, res) => {
             err ? reject(err) : resolve(res);
           }
