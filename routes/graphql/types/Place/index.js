@@ -13,7 +13,7 @@ export default `
 		region: String!	
 	}
 	type Query {
-		place(id: String!): Place
+		place(id: String, lat: String, long: String): Place
 		places: [Place]
 	}
 	type Mutation {

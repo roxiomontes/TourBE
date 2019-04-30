@@ -79,8 +79,9 @@ function parseScript() {
 			let checkins = e.checkins
 			let picture = "https://www.google.com/images/placeholder"
 			if (e && e.picture) {
-				picture = e.picture.url
+				picture = e.picture.data.url
 			}
+			console.log("picture: " + picture)
 			let lat = "0.0"
 			let long = "0.0"
 			if (e && e.location) {
