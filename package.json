@@ -23,7 +23,7 @@
     "graphql-tools": "^4.0.4",
     "jade": "~1.11.0",
     "merge-graphql-schemas": "^1.5.8",
-    "mongoose": "^5.5.4",
+    "mongoose": "^5.7.5",
     "morgan": "~1.9.0",
     "node-fetch": "^2.4.1",
     "nodemon": "^1.18.11",
